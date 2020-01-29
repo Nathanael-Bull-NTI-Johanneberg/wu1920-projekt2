@@ -1,0 +1,46 @@
+@media screen and (max-width:750px){
+.index{
+    
+}
+        
+    }
+    
+
+
+
+
+header{
+    display: block;
+    background-color: #FFF5CF;
+    color: crimson;
+    font-family: 'Pacifico', cursive;
+    padding: 1em;
+    margin-top: 1em;
+    margin-left: 30%;
+    text-align: center;
+    width: 40%;
+   
+    
+    
+}
+
+nav{
+    background-color:#E8D7B0 ;
+    text-align: center;
+    color: crimson;
+    padding: 0.5em;
+    
+}
+a:link {
+    color:crimson;
+    }
+    a:visited {
+    color:teal;
+    }
+body{
+    background-color: #FFE6C2;
+}
+
+
+
+
