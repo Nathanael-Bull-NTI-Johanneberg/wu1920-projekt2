@@ -1,15 +1,64 @@
-@media screen and (max-width:750px){
-.index{
-    
-}
+
+
+
+ nav{
+        background-color:#E8D7B0 ;
+        text-align: center;
+        color: crimson;
+        padding: 0.5em;
+        margin-left: 3em;
+        margin-right: 3em;
         
     }
+    a:link {
+        color:crimson;
+        font-family:  'Pacifico', cursive;
+        }
+        a:visited {
+        color:rgb(151, 14, 41);
+        font-family:  'Pacifico', cursive;
+        }
     
 
+@media screen and (min-width: 375px) {
+    body {
+        background-color:burlywood;
+    }
+    header{
+        width: 100%;
+        margin-right: 1em;
+        
+        display: block;
+        background-image: url('img\pizza2.jpg');
+        color: crimson;
+        font-family: 'Pacifico', cursive;
+        padding: 1em;
+        margin-top: 1em;
+        text-align: center;
+        font-weight: 250;
+        text-shadow: -0.1vw 0 white, 0 0.2vw black, 0.2vw 0 black, 0 -0.2vw black;
+      
+    }
+    article{
+        text-align: center;
+        margin-left: 3em;
+        margin-right: 3em;
+        margin-top: 1em;
+    }
+  
+}
 
-
-
-header{
+@media screen and (min-width: 768px) {
+    body {
+        background-color:burlywood;
+    }
+    
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    header{
     display: block;
     background-color: #FFF5CF;
     color: crimson;
@@ -17,29 +66,54 @@ header{
     padding: 1em;
     margin-top: 1em;
     margin-left: 30%;
+    margin-bottom: 1em;
     text-align: center;
     width: 40%;
-   
+    }
     
-    
+    article{
+        text-align: center;
+        margin-left: 3em;
+        margin-right: 3em;
+        margin-top: 1em;
+    }
 }
 
-nav{
-    background-color:#E8D7B0 ;
-    text-align: center;
-    color: crimson;
-    padding: 0.5em;
-    
-}
-a:link {
-    color:crimson;
+@media screen and (min-width: 992px) {
+    body {
+        background-color:burlywood;
     }
-    a:visited {
-    color:teal;
+    header{
+        display: block;
+        background-color: #FFF5CF;
+        color: crimson;
+        font-family: 'Pacifico', cursive;
+        padding: 1em;
+        margin-top: 1em;
+        margin-left: 30%;
+        text-align: center;
+        width: 40%;
+        background-image: url('img\pizza2.jpg');
     }
-body{
-    background-color: #FFE6C2;
+    article{
+        text-align: center;
+        margin-left: 3em;
+        margin-right: 3em;
+        margin-top: 1em;
+    }
 }
+
+@media print {
+    body {
+        background-color: white;
+        color: black;
+    }
+
+    a:after{
+        content:" (" attr(href) ") ";
+    }
+}
+
 
 
 
