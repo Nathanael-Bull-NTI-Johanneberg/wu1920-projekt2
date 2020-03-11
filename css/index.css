@@ -1,36 +1,66 @@
 
 
-
- nav, footer{
-        background-color:#E8D7B0 ;
-        text-align: center;
-        width: 80%;
-        padding: 0.5em;
-        margin: auto;
+nav, footer{
+        background-color: black ;
+        text-align: center;       
+        padding: 0.5e;
+        margin-top: 2%;
+        display: inline-flex;
+        width: 100%;
+        column-count: auto 
     }
+    a:link, a:visited {
+        background-color: rgb(65, 60, 60);
+        color: white;
+        padding: 2% 2%;
+        text-align: center;
+        text-decoration:none;
+        display: block;
+        width: 18%;
+        margin: auto;
+        font-family: 'Josefin Sans', sans-serif;
+        
+        
+      }
+      
+    a:hover, a:active {
+        background-color: crimson;
+        
+      }
 
-
-    a:link {
-        color:crimson;
-        font-family:  'Pacifico', cursive;
-        }
-        a:visited {
-        color:rgb(151, 14, 41);
-        font-family:  'Pacifico', cursive;
-        }
+    article{
+        text-align: center;
+        font-family: 'Josefin Sans', sans-serif;
+        
+        
+      }
+    .formular{
+          margin-top: 1.5%;
+          text-align: center;
+          row-gap: 1%;
+          border-style: double;
+          border-width: 1%;
+          border-color: black;
+          display: block;
+          width: 50%;
+          margin-left: 24%;
+    }
+    form{
+        margin-top: 2%;
+    }
     
-
+    
+    
+    
 @media screen and (min-width: 375px) {
     body {
-        background-color:burlywood;
+        background-color: white;
     }
     header{
-        width: 80%;
-        margin-right: 1em;
-        background-color: #FFF5CF;
+        width: 100%;
+        
+        background-color: rgb(65, 60, 60);
         display: block;
-        background-image: image('img\pizza2.jpg');
-        background-size: cover;
         color: crimson;
         font-family: 'Pacifico', cursive;
         padding: 1em;
@@ -38,20 +68,34 @@
         text-align: center;
         font-weight: 250;
         text-shadow: -0.1vw 0 white, 0 0.2vw black, 0.2vw 0 black, 0 -0.2vw black;
-      
+     
     }
-    article{
-        text-align: center;
-        margin-left: 3em;
-        margin-right: 3em;
-        margin-top: 1em;
+    img{
+        width: 80%;
+        height: auto;
     }
- 
+    .box {
+        background-color: #444;
+        color: white;
+        border-radius: 5px;
+        padding: 20px;
+        font-size: 150%;
+        background-color: rgb(65, 60, 60);
+      }     
+          .wrapper {
+              width: 90%;
+
+              display: grid;
+          grid-gap: 10px;
+              grid-template-columns: repeat(1, 80%);
+              
+          }
+        }
 
 
 @media screen and (min-width: 768px) {
     body {
-        background-color:burlywood;
+        background-color:white;
     }
     
     main {
@@ -61,8 +105,8 @@
     }
     header{
     display: block;
-    background-color: #FFF5CF;
-    background-image: url('img\pizza2.jpg');
+    background-color:rgb(65, 60, 60);
+
     color: crimson;
     font-family: 'Pacifico', cursive;
     padding: 1em;
@@ -70,41 +114,82 @@
     margin: auto;
     margin-bottom: 1em;
     text-align: center;
-    width: 80%;
+    width: 100%;
     }
+    .box {
+        background-color: #444;
+        color: crimson;
+        border-radius: 5px;
+        padding: 20px;
+        font-size: 150%;
+        background-color: #FFF5CF;
+      }
+      
     
-    article{
-        text-align: center;
-        margin-left: 3em;
-        margin-right: 3em;
-        margin-top: 1em;
-    }
-}
+      
+      
+          .wrapper {
+              width: 80%;
+              display: grid;
+          grid-gap: 10px;
+              grid-template-columns: repeat(3, 30%);
+          }
+        }
+
 
 @media screen and (min-width: 992px) {
     body {
-        background-color:burlywood;
+        background-color:white;
     }
     header{
         display: block;
-        background-color: #FFF5CF;
+        background-color:  rgb(65, 60, 60);
         color: crimson;
         font-family: 'Pacifico', cursive;
         padding: 1em;
         margin-top: 1em;
         margin-right: auto;
         text-align: center;
-        width: 80%;
-        background-image: url('img\pizza2.jpg');
+        font-size: larger;
+        width: 100%;
+      
         background-size: cover;
     }
     article{
+        margin: 1.5%;
         text-align: center;
-        margin-left: 3em;
-        margin-right: 3em;
-        margin-top: 1em;
+        background-color: white;
+        color: black;
+        border-radius: 5px;
+        padding: 20px;
+        font-size: 150%;
+        
     }
-}
+    img{
+        width: 80%;
+        height: auto;
+    }
+    .box {
+        background-color: #444;
+        color: white;
+        border-radius: 5px;
+        padding: 20px;
+        font-size: 150%;
+        background-color:  rgb(65, 60, 60);
+      }
+      
+    
+      
+      
+          .wrapper {
+              width: 80%;
+              display: grid;
+          grid-gap: 10px;
+              grid-template-columns: repeat(3, 30%);
+              margin-left: 145px;
+          }
+      
+        }
 
 @media print {
     body {
@@ -119,52 +204,8 @@
 
 
 }
-#main-menu{
-    
-    background-color: #f4511e;
-    padding: 1em;
-    margin-top: 1em;
-    display: none;
-    font-family: 'Josefin Sans', sans-serif;
-
-
-}
-
-#main-menu.active {
-    display: block;
-    width: 125px;
-    color:white;
-    transition: 0.3s; 
-    
-}
-#main-menu.active:hover{
-width: 200px;
-
-}
-#menu-button {
-    background-color: #f4511e;
-    border: none;
-    color: white;
-    padding: 16px 32px;
-    text-align: center;
-    font-size: 16px;
-    margin: 4px 2px;
-    opacity: 1;
-    transition: 1s;
-    font-family: 'Josefin Sans', sans-serif;
-  }
-  
-  #menu-button:hover {
-      opacity: 0.6;
-    
-}
-
-
- a{
-     color: white;
- }
 
 
 
 
-}
+
